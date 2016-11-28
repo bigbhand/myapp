@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bb.apps.myapp.server.mapper.IMyAppServiceMapper">
+
+	<select id="checkCredentials" resultMap="loginMap" flushCache="true">
+		SELECT
+		     *
+		FROM
+		     MYAPP_USERS
+		WHERE
+		     UPPER(USER_ID) = UPPER(#{user.username})
+	</select>
+	
+	<resultMap type="com.bb.apps.myapp.shared.User" id="loginMap">
+		<result column="USER_ID" property="username" />
+		<result column="FULL_NAME" property="fullName" />
+		<result column="PASSWORD" property="password" />
+		<result column="ROLE" property="role" />
+		<result column="STATUS" property="status" />
+		<result column="LAST_LOGIN_TIME" property="lastLogin" />
+	</resultMap>
+	
+	<select id="getCountryList" resultMap="countryMap" flushCache="true">
+		SELECT
+		     *
+		FROM
+		     COUNTRIES
+	</select>
+	
+	<resultMap type="String" id="countryMap">
+		<constructor>
+			<arg column="COUNTRY_NAME" javaType="String" />
+		</constructor>
+	</resultMap>
+
+
+
+</mapper>

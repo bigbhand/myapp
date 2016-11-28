@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='MyApp'>
+
+  <inherits name='com.google.gwt.user.User' />
+  <inherits name='com.google.gwt.resources.Resources'/>
+  <inherits name='com.mvp4g.Mvp4gModule'/>
+  <inherits name='com.sencha.gxt.ui.GXT'/>
+  <inherits name='com.google.gwt.user.theme.standard.Standard' />
+  
+  <entry-point class='com.bb.apps.myapp.client.MyApp' />
+
+  <source path='client' />
+  <source path='shared' />
+  
+  <replace-with class='com.bb.apps.myapp.client.views.root.RootShellView'>
+      <when-type-is class='com.bb.apps.myapp.client.ui.root.IRootShellView'/>
+  </replace-with>
+
+  <replace-with class='com.bb.apps.myapp.client.views.navigation.NavBarView'>
+      <when-type-is class='com.bb.apps.myapp.client.ui.navigation.INavBarView'/>
+  </replace-with>
+  
+  <replace-with class='com.bb.apps.myapp.client.views.header.HeaderView'>
+      <when-type-is class='com.bb.apps.myapp.client.ui.header.IHeaderView'/>
+  </replace-with>
+  
+  <replace-with class='com.bb.apps.myapp.client.views.footer.FooterView'>
+      <when-type-is class='com.bb.apps.myapp.client.ui.footer.IFooterView'/>
+  </replace-with>
+  
+  <replace-with class='com.bb.apps.myapp.client.views.shell.ShellView'>
+      <when-type-is class='com.bb.apps.myapp.client.ui.shell.IShellView'/>
+  </replace-with>
+  
+  <replace-with class='com.bb.apps.myapp.client.views.tabs.HomeTabView'>
+      <when-type-is class='com.bb.apps.myapp.client.ui.tabs.IHomeTabView'/>
+  </replace-with>
+  
+  <replace-with class='com.bb.apps.myapp.client.views.tabs.LoginView'>
+      <when-type-is class='com.bb.apps.myapp.client.ui.tabs.ILoginView'/>
+  </replace-with>
+  
+  <replace-with class='com.bb.apps.myapp.client.views.tabs.AdminHomeView'>
+      <when-type-is class='com.bb.apps.myapp.client.ui.tabs.IAdminHomeView'/>
+  </replace-with>
+  
+  <extend-property name="locale" values="de,hi_IN,kn_IN"/>
+  
+  <!-- <define-property name="human" values="male,female">
+  	<![CDATA[
+  		return __gwt_getMetaProperty("human")
+  	]]>
+  </define-property>
+  
+  <replace-with class="com.bb.apps.client.IHuman">
+  	<when-type-is class="com.bb.apps.client.HumanMale"></when-type-is>
+  	<when-property-is name="human" value="male"></when-property-is>
+  </replace-with>
+  
+  <replace-with class="com.bb.apps.client.IHuman">
+  	<when-type-is class="com.bb.apps.client.HumanFemale"></when-type-is>
+  	<when-property-is name="human" value="female"></when-property-is>
+  </replace-with>
+  
+  <replace-with class="com.bb.apps.client.IHuman">
+  	<when-type-is class="com.bb.apps.client.Human"></when-type-is>
+  	<any>
+  		<when-property-is name="human" value="male"></when-property-is>
+  		<when-property-is name="human" value="female"></when-property-is>
+  	</any>
+  </replace-with> -->
+  
+
+</module>

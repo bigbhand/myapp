@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLShema-instance"
+		xsi:noNamespaceSchemaLocation="http://ecache.org/ecache.xsd" updateCheck="false">
+		
+		<diskStore path="java.io.tmpdir/myappcache"/>
+		
+		<defaultCache eternal="false" maxElementsInMemory="10000"
+			overflowToDisk="false" diskPersistent="false" timeToIdleSeconds="0"
+			timeToLiveSeconds="600" memoryStoreEvictionPolicy="LRU" statistics="true"/> 
+			 
+		<cache name="referenceCache" eternal="false" 
+		maxElementsInMemory="10000" overflowToDisk="false" diskPersistent="false" 
+		timeToIdleSeconds="0" timeToLiveSeconds="300" memoryStoreEvictionPolicy="LRU" statistics="true">
+			<searchable>
+				<searchAttribute name="referenceInput" expression="value.getRefereneceKey()"/>
+			</searchable>
+		</cache>
+		
+		
+</ehcache>

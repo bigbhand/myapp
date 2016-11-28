@@ -1,0 +1,56 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	.borderBottom{
+		padding-bottom:2px;
+		border-bottom: solid 1px #a1a1a1;
+		padding-top: 5px;
+		width:300px;
+		float:left;
+	}
+	</ui:style>
+	<ui:with type="com.bb.apps.myapp.client.IMyAppResources" field="res"></ui:with>
+	<g:HTMLPanel>
+	
+	<g:HTMLPanel><div style="width:100%;height:4px;background-color:#4E5C5A;"/></g:HTMLPanel>
+	
+	<g:HorizontalPanel>
+	
+		<g:VerticalPanel styleName="{res.myAppStyles.footerBox}">
+			<g:HTML styleName="{res.myAppStyles.footerHeaader}">About Us</g:HTML>
+			<g:HTMLPanel styleName="{res.myAppStyles.footerContet}">
+			This section tells something about you and your organization, 
+			products and services. This is a sample content, 
+			replace this with your actual content. 
+			</g:HTMLPanel>
+		</g:VerticalPanel>
+		
+		<g:VerticalPanel styleName="{res.myAppStyles.footerBox}">
+			<g:HTML styleName="{res.myAppStyles.footerHeaader}">Latest News</g:HTML>
+			<g:Hyperlink styleName="{res.myAppStyles.footerLink}">news feed line 1</g:Hyperlink>
+			<g:Hyperlink styleName="{res.myAppStyles.footerLink}">news feed line 2</g:Hyperlink>
+			<g:Hyperlink styleName="{res.myAppStyles.footerLink}">news feed line 3</g:Hyperlink>
+			<g:Hyperlink styleName="{res.myAppStyles.footerLink}">news feed line 4</g:Hyperlink>
+		</g:VerticalPanel>
+		
+		<g:VerticalPanel styleName="{res.myAppStyles.footerBox}">
+			<g:HTML styleName="{res.myAppStyles.footerHeaader}">Contact Us</g:HTML>
+			<g:HorizontalPanel styleName="{style.borderBottom}">
+			<g:HTMLPanel><i class="fa fa-envelope-o" style="font-size:14px;color:#cccdd0;margin-right:5px;width:15px;"></i></g:HTMLPanel>
+			<g:Label styleName="{res.myAppStyles.footerText}">examplemailid@bigbhand.com</g:Label>
+			</g:HorizontalPanel>
+			<g:HorizontalPanel styleName="{style.borderBottom}">
+			<g:HTMLPanel><i class="fa fa-phone" style="font-size:14px;color:#cccdd0;margin-right:5px;width:5px;"></i></g:HTMLPanel>
+			<g:Label styleName="{res.myAppStyles.footerText}">+(080)-24425296</g:Label>
+			</g:HorizontalPanel>
+			<g:HorizontalPanel styleName="{style.borderBottom}">
+			<g:HTMLPanel><i class="fa fa-home" style="font-size:14px;color:#cccdd0;margin-right:5px;width:15px;"></i></g:HTMLPanel>
+			<g:Label styleName="{res.myAppStyles.footerText}">your complete address goes here</g:Label>
+			</g:HorizontalPanel>
+		</g:VerticalPanel>
+	
+	</g:HorizontalPanel>
+	
+	</g:HTMLPanel>
+</ui:UiBinder> 

@@ -1,0 +1,22 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:r="urn:import:com.bb.apps.myapp.client.widgets">
+	<ui:style>
+	</ui:style>
+	
+	<ui:with type="com.bb.apps.myapp.client.messages.MyAppConstants" field="con"></ui:with>
+	<ui:with type="com.bb.apps.myapp.client.IMyAppResources" field="res"></ui:with>
+	
+	<g:HTMLPanel width="100%" styleName="{res.myAppStyles.navBarPanel}">
+		<g:HorizontalPanel>
+			<r:NavBarItem text="{con.home}" ui:field="homeTab"></r:NavBarItem>
+			<r:NavBarItem text="{con.formName1}" ui:field="form1Tab"></r:NavBarItem>
+			<r:NavBarItem text="{con.formName2}" ui:field="form2Tab"></r:NavBarItem>
+			<r:NavBarItem text="{con.formName3}" ui:field="form3Tab"></r:NavBarItem>
+			<r:NavBarItem text="{con.formName4}" ui:field="form4Tab"></r:NavBarItem>
+			<r:NavBarItem text="{con.contactUs}" ui:field="contactsTab"></r:NavBarItem>
+			<r:NavBarItem text="{con.help}" ui:field="helpTab"></r:NavBarItem>
+		</g:HorizontalPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

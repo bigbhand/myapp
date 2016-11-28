@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+	<!-- Servlets -->
+	<servlet>
+		<servlet-name>greetServlet</servlet-name>
+		<servlet-class>com.bb.apps.myapp.server.GreetingServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>cacheServlet</servlet-name>
+		<servlet-class>com.bb.apps.myapp.server.cache.CacheServiceImpl</servlet-class>
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>fileUploaderServlet</servlet-name>
+		<servlet-class>com.bb.apps.myapp.server.FileUploadServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>greetServlet</servlet-name>
+		<url-pattern>/MyApp/myApp</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>cacheServlet</servlet-name>
+		<url-pattern>/MyApp/cache</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>fileUploaderServlet</servlet-name>
+		<url-pattern>/MyApp/fileUpload</url-pattern>
+	</servlet-mapping>
+
+	<!-- Default page to serve -->
+	<welcome-file-list>
+		<welcome-file>MyApp.html</welcome-file>
+	</welcome-file-list>
+
+</web-app>
