@@ -127,11 +127,11 @@ public class HeaderView_HeaderViewUiBinderImpl implements UiBinder<com.google.gw
       f_HTMLPanel1.setWidth("100%");
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord1 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
+      UiBinderUtil.TempAttachment attachRecord5 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
       get_domId0Element().get();
 
       // Detach section.
-      attachRecord1.detach();
+      attachRecord5.detach();
       f_HTMLPanel1.addAndReplaceElement(get_f_HorizontalPanel2(), get_domId0Element().get());
 
       return f_HTMLPanel1;

@@ -111,12 +111,12 @@ public class AdminHomeView_AdminHomeViewUiBinderImpl implements UiBinder<com.goo
       f_HTMLPanel1.setWidth("100%");
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord8 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
+      UiBinderUtil.TempAttachment attachRecord4 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
       get_domId0Element().get();
       get_domId1Element().get();
 
       // Detach section.
-      attachRecord8.detach();
+      attachRecord4.detach();
       f_HTMLPanel1.addAndReplaceElement(get_adminLabel(), get_domId0Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_homeNote(), get_domId1Element().get());
 

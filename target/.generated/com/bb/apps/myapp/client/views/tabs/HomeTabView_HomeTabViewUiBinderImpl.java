@@ -113,13 +113,13 @@ public class HomeTabView_HomeTabViewUiBinderImpl implements UiBinder<com.google.
       f_HTMLPanel1.setWidth("100%");
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord9 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
+      UiBinderUtil.TempAttachment attachRecord1 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
       get_domId0Element().get();
       get_domId1Element().get();
       get_domId2Element().get();
 
       // Detach section.
-      attachRecord9.detach();
+      attachRecord1.detach();
       f_HTMLPanel1.addAndReplaceElement(get_homeNote(), get_domId0Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_countryCombo(), get_domId1Element().get());
       f_HTMLPanel1.addAndReplaceElement(get_formPanel(), get_domId2Element().get());
@@ -306,7 +306,7 @@ public class HomeTabView_HomeTabViewUiBinderImpl implements UiBinder<com.google.
       // Creation section.
       final com.sencha.gxt.widget.core.client.button.TextButton uploadButton = (com.sencha.gxt.widget.core.client.button.TextButton) GWT.create(com.sencha.gxt.widget.core.client.button.TextButton.class);
       // Setup section.
-      uploadButton.setText("Submit");
+      uploadButton.setText("Submit Form");
       uploadButton.setWidth("80px");
 
 

@@ -20,10 +20,10 @@ public class AdminHomeView_AdminHomeViewUiBinderImpl_GenBundle_default_InlineCli
         return "style";
       }
       public String getText() {
-        return (".GOKTVRVBPIC{font-weight:" + ("bold")  + ";}");
+        return (".GOKTVRVBNIC{font-weight:" + ("bold")  + ";}");
       }
       public java.lang.String important() {
-        return "GOKTVRVBPIC";
+        return "GOKTVRVBNIC";
       }
     }
     ;

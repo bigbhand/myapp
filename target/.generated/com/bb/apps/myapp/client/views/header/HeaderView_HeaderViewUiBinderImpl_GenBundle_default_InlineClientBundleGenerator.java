@@ -20,13 +20,13 @@ public class HeaderView_HeaderViewUiBinderImpl_GenBundle_default_InlineClientBun
         return "style";
       }
       public String getText() {
-        return com.google.gwt.i18n.client.LocaleInfo.getCurrentLocale().isRTL() ? ((".GOKTVRVBNIC{float:" + ("left")  + ";}.GOKTVRVBOIC{padding-right:" + ("30px")  + ";}")) : ((".GOKTVRVBNIC{float:" + ("right")  + ";}.GOKTVRVBOIC{padding-left:" + ("30px")  + ";}"));
+        return com.google.gwt.i18n.client.LocaleInfo.getCurrentLocale().isRTL() ? ((".GOKTVRVBOIC{float:" + ("left")  + ";}.GOKTVRVBPIC{padding-right:" + ("30px")  + ";}")) : ((".GOKTVRVBOIC{float:" + ("right")  + ";}.GOKTVRVBPIC{padding-left:" + ("30px")  + ";}"));
       }
       public java.lang.String flatRight() {
-        return "GOKTVRVBNIC";
+        return "GOKTVRVBOIC";
       }
       public java.lang.String flatRightEnd() {
-        return "GOKTVRVBOIC";
+        return "GOKTVRVBPIC";
       }
     }
     ;

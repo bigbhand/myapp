@@ -210,11 +210,11 @@ public class RootShellView_RootShellViewUiBinderImpl implements UiBinder<com.goo
       f_HTMLPanel4.setWidth("100%");
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord3 = UiBinderUtil.attachToDom(f_HTMLPanel4.getElement());
+      UiBinderUtil.TempAttachment attachRecord9 = UiBinderUtil.attachToDom(f_HTMLPanel4.getElement());
       get_domId0Element().get();
 
       // Detach section.
-      attachRecord3.detach();
+      attachRecord9.detach();
       f_HTMLPanel4.addAndReplaceElement(get_header(), get_domId0Element().get());
 
       return f_HTMLPanel4;
@@ -282,11 +282,11 @@ public class RootShellView_RootShellViewUiBinderImpl implements UiBinder<com.goo
       f_HTMLPanel5.setWidth("100%");
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord4 = UiBinderUtil.attachToDom(f_HTMLPanel5.getElement());
+      UiBinderUtil.TempAttachment attachRecord10 = UiBinderUtil.attachToDom(f_HTMLPanel5.getElement());
       get_domId1Element().get();
 
       // Detach section.
-      attachRecord4.detach();
+      attachRecord10.detach();
       f_HTMLPanel5.addAndReplaceElement(get_navBar(), get_domId1Element().get());
 
       return f_HTMLPanel5;
@@ -354,11 +354,11 @@ public class RootShellView_RootShellViewUiBinderImpl implements UiBinder<com.goo
       f_HTMLPanel6.setWidth("100%");
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord5 = UiBinderUtil.attachToDom(f_HTMLPanel6.getElement());
+      UiBinderUtil.TempAttachment attachRecord11 = UiBinderUtil.attachToDom(f_HTMLPanel6.getElement());
       get_domId2Element().get();
 
       // Detach section.
-      attachRecord5.detach();
+      attachRecord11.detach();
       f_HTMLPanel6.addAndReplaceElement(get_content(), get_domId2Element().get());
 
       return f_HTMLPanel6;
@@ -426,11 +426,11 @@ public class RootShellView_RootShellViewUiBinderImpl implements UiBinder<com.goo
       f_HTMLPanel7.setWidth("100%");
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord6 = UiBinderUtil.attachToDom(f_HTMLPanel7.getElement());
+      UiBinderUtil.TempAttachment attachRecord12 = UiBinderUtil.attachToDom(f_HTMLPanel7.getElement());
       get_domId3Element().get();
 
       // Detach section.
-      attachRecord6.detach();
+      attachRecord12.detach();
       f_HTMLPanel7.addAndReplaceElement(get_footer(), get_domId3Element().get());
 
       return f_HTMLPanel7;

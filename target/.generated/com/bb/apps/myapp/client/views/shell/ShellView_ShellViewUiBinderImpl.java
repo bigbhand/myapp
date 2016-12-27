@@ -125,11 +125,11 @@ public class ShellView_ShellViewUiBinderImpl implements UiBinder<com.google.gwt.
       f_HTMLPanel2.setWidth("auto");
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord7 = UiBinderUtil.attachToDom(f_HTMLPanel2.getElement());
+      UiBinderUtil.TempAttachment attachRecord8 = UiBinderUtil.attachToDom(f_HTMLPanel2.getElement());
       get_domId0Element().get();
 
       // Detach section.
-      attachRecord7.detach();
+      attachRecord8.detach();
       f_HTMLPanel2.addAndReplaceElement(get_selectedTab(), get_domId0Element().get());
 
       return f_HTMLPanel2;

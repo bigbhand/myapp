@@ -178,11 +178,11 @@ public class LoginView_LoginViewUiBinderImpl implements UiBinder<com.google.gwt.
       f_HTMLPanel1.setWidth("100%");
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord10 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
+      UiBinderUtil.TempAttachment attachRecord6 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
       get_domId0Element().get();
 
       // Detach section.
-      attachRecord10.detach();
+      attachRecord6.detach();
       f_HTMLPanel1.addAndReplaceElement(get_f_HTMLPanel2(), get_domId0Element().get());
 
       return f_HTMLPanel1;
@@ -217,11 +217,11 @@ public class LoginView_LoginViewUiBinderImpl implements UiBinder<com.google.gwt.
       f_HTMLPanel2.setStyleName("" + get_res().myAppStyles().loginBackground() + "");
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord11 = UiBinderUtil.attachToDom(f_HTMLPanel2.getElement());
+      UiBinderUtil.TempAttachment attachRecord7 = UiBinderUtil.attachToDom(f_HTMLPanel2.getElement());
       get_domId1Element().get();
 
       // Detach section.
-      attachRecord11.detach();
+      attachRecord7.detach();
       f_HTMLPanel2.addAndReplaceElement(get_f_VerticalLayoutContainer3(), get_domId1Element().get());
 
       return f_HTMLPanel2;

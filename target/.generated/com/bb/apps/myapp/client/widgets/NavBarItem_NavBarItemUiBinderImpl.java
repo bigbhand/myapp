@@ -107,11 +107,11 @@ public class NavBarItem_NavBarItemUiBinderImpl implements UiBinder<com.google.gw
       f_HTMLPanel1.setStyleName("" + get_res().myAppStyles().navBarItem() + "");
 
       // Attach section.
-      UiBinderUtil.TempAttachment attachRecord12 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
+      UiBinderUtil.TempAttachment attachRecord3 = UiBinderUtil.attachToDom(f_HTMLPanel1.getElement());
       get_domId0Element().get();
 
       // Detach section.
-      attachRecord12.detach();
+      attachRecord3.detach();
       f_HTMLPanel1.addAndReplaceElement(get_label(), get_domId0Element().get());
 
       return f_HTMLPanel1;

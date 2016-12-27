@@ -1,0 +1,13 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	.rootNavBar {
+		max-width:1020px;
+		overflow: hidden;
+	}
+	</ui:style>
+	<g:HTMLPanel styleName="{style.rootNavBar}">
+		<g:HorizontalPanel></g:HorizontalPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 
